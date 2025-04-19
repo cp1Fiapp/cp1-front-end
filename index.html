@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine House</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Wine House</h1>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#vinhos" class="nav-link">Vinhos</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">Wine House</h1>
+            <p class="fade-in">Descubra o prazer de degustar os melhores vinhos selecionados especialmente para você</p>
+            <a href="#vinhos" class="btn fade-in">Explorar Vinhos</a>
+        </div>
+    </section>
+
+    <section id="vinhos" class="wines">
+        <div class="container">
+            <h2>Nossos Vinhos</h2>
+            <div class="wine-grid">
+                <div class="wine-card">
+                    <img src="imagens/cabernet.png" alt="Cabernet Sauvignon">
+                    <h3>Cabernet Sauvignon</h3>
+                    <p>Vinho tinto encorpado com notas de frutas negras</p>
+                </div>
+                <div class="wine-card">
+                    <img src="imagens/chardonay.png" alt="Chardonnay">
+                    <h3>Chardonnay</h3>
+                    <p>Vinho branco elegante com notas cítricas</p>
+                </div>
+                <div class="wine-card">
+                    <img src="imagens/merlot.png" alt="Merlot">
+                    <h3>Merlot</h3>
+                    <p>Vinho tinto aveludado com notas de frutas vermelhas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Nossa História</h2>
+                    <p>Desde 1980, a Wine House tem se dedicado à arte de selecionar os melhores vinhos do mundo. Nossa paixão por vinhos nos levou a criar experiências únicas para nossos clientes.</p>
+                    <p>Com um compromisso inabalável com a qualidade, trabalhamos diretamente com vinícolas renomadas para trazer até você o melhor da produção vinícola mundial.</p>
+                </div>
+                <div class="about-image">
+                    <img src="imagens/sobre%20nós.png" alt="Adega de vinhos">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Wine House</h3>
+                    <p>Sua casa de vinhos premium</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>contato@winehouse.com</p>
+                    <p>+55 (11) 99999-9999</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Endereço</h3>
+                    <p>Rua dos Vinhos, 123<br>São Paulo - SP</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Wine House. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/app1.js"></script>
+</body>
+</html>
